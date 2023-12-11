@@ -1,0 +1,21 @@
+#! /bin/bash
+echo "Enter the day"
+read day
+case $day in
+Monday)echo "its day"
+;;
+Tuesday)echo "its day"
+;;
+Wednesday)echo "its day"
+;;
+Thursday)echo "its day"
+;;
+Friday)echo "its day"
+;;
+saturday)echo "its day"
+;;
+sunday)echo "its day"
+;;
+*)echo "invalid choice"
+;;
+esac
