@@ -1,0 +1,12 @@
+#! bin/bash
+echo "Good Evening"
+echo "Please Enter your salary"
+read sal
+if [ $sal -lt 10000 ]
+then
+echo "$in this $sal there is no tax"
+elif [ $sal -gt 10000 ] && [ $sal -lt 25000 ]
+then
+tax=$((( sal - 10000 ) * ( 0.05 ) ))
+echo "in this $sal tax deducted is $tax"
+fi 
