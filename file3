@@ -7,8 +7,12 @@ then
 echo "in this $sal sal there is no tax"
 elif [ $sal -gt 10000 ] && [ $sal -le 25000 ]
 then
-echo "in this $sal sal 5% tax is included"
+res=$(( sal * 5/100 ))
+sal=$(( sal - res ))
+echo "total $sal after adding 5% tax "
 elif [ $sal -gt 25000 ]
-then 
-echo "in this $sal sal 10% tax is deducted"
+then
+res=$(( sal * 10/100 ))
+sal=$(( sal -res ))
+echo "total sal $sal after 10% tax is deducted"
 fi
